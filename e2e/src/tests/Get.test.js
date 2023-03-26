@@ -9,7 +9,7 @@ test.skip('retrieve user posts', async ({ request }) => {
 test('retrieve user post', async ({ request }) => {
   const response = await request.get('/posts/1')
   expect(response.ok()).toBeTruthy()
-  expect(response.status()).toBe(200)
+           expect(response.status()).toBe(200)
   expect(await response.json()).toEqual(expect.objectContaining({
     "id": 1,
     "userId": 1
