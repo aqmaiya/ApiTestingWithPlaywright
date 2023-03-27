@@ -1,0 +1,59 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-an-api-i-can-retrieve-posts;as-an-api-i-can-retrieve-all-the-posts",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "As an API I can retrieve all the posts",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I retrieve \"posts\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the response was successful",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the response status code is 200",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-an-api-i-can-retrieve-posts",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As an API I can retrieve posts",
+    "tags": [],
+    "uri": "src\\features\\Get.feature"
+  }
+]

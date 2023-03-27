@@ -6,9 +6,9 @@
   "scripts": {
     "lint": "eslint . --ext .ts",
     "test": "npx playwright test --reporter=html",
-    "transpile": "rimraf dist && bable --extensions .ts --out-dir dist src",
-    "precucumber": "mkdir reports & echo {} > reports/report.json",
-    "cucmber": "npm run transpile && cucumber-js",
+    "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
+    "precucumber": "rimraf reports && mkdir reports && echo {} > reports/report.json",
+    "cucumber": "npm run transpile && cucumber-js",
     "perviouscucumber": "cucumber-js src/features/**/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts"
   },
   "author": "",
@@ -27,6 +27,7 @@
     "@babel/core": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-typescript": "^7.21.0",
-    "@cucumber/cucumber": "^8.10.0"
+    "@cucumber/cucumber": "^8.10.0",
+    "dotenv": "^16.0.3"
   }
 }
